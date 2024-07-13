@@ -20,4 +20,4 @@ You can change some settings in the .env file.
 - Grafana instance name
 
 ### Connect
-Visit http://localhost:3000 or your custom domain
+Visit http://localhost:3030 or your custom domain
