@@ -7,13 +7,13 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus-config:/etc/prometheus/
+      - ./config:/etc/prometheus/
     networks:
       - monitoring_network
 
-  node_exporter:
+  node-exporter:
     image: prom/node-exporter:latest
-    container_name: node_exporter
+    container_name: node-exporter
     command:
       - '--path.rootfs=/host'
     ports:
@@ -24,18 +24,30 @@ services:
       - monitoring_network
 
   grafana:
-    image: grafana/grafana-enterprise
+    build: .
+    image: melvin-grafana
     container_name: grafana
     restart: unless-stopped
-    environment:
-      - GF_SERVER_ROOT_URL=http://my.grafana.server/
-      - GF_INSTALL_PLUGINS=grafana-clock-panel
-      - GF_SERVER_HTTP_PORT=3030
+    env_file: ".env"
     ports:
-      - '3030:3030'
+      - '3000:3000'
     volumes:
       - 'grafana_storage:/var/lib/grafana'
 
+    networks:
+      - monitoring_network
+
+  dcgm-exporter:
+    image: nvcr.io/nvidia/k8s/dcgm-exporter
+    container_name: dcgm-exporter
+    ports:
+      - "9400:9400"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
     networks:
       - monitoring_network
 
@@ -44,4 +56,4 @@ networks:
     driver: bridge
 
 volumes:
-  grafana_storage: {}
+  grafana_storage: { }
