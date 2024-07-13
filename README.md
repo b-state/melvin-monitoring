@@ -10,7 +10,7 @@ This repository contains the files to create a Grafana monitoring dashboard for 
 ### Installation
 1. Replace the password in the .env.example with your own
 2. Remove the ".example" from the .env file
-3. Run `docker-compose -d -p melvin-monitoring up`
+3. Run `docker-compose -p melvin-monitoring up`
 
 ### Customisation
 You can change some settings in the .env file.
