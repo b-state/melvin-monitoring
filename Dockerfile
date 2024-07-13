@@ -11,6 +11,8 @@ ENV GF_PLUGIN_RENDERING_CHROME_BIN="/usr/bin/chrome"
 
 USER root
 
+EXPOSE 3030
+
 RUN mkdir -p /etc/grafana/provisioning/dashboards
 RUN mkdir -p /etc/grafana/provisioning/datasources
 
