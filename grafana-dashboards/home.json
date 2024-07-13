@@ -35,7 +35,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cdmnjs1e7aw3kd"
+        "uid": "melvinprometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -114,7 +114,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cdmnjs1e7aw3kd"
+            "uid": "melvinprometheus"
           },
           "disableTextWrap": false,
           "editorMode": "code",
@@ -134,7 +134,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cdmnjs1e7aw3kd"
+        "uid": "melvinprometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -213,7 +213,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cdmnjs1e7aw3kd"
+            "uid": "melvinprometheus"
           },
           "disableTextWrap": false,
           "editorMode": "code",
@@ -246,7 +246,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cdmnjs1e7aw3kd"
+        "uid": "melvinprometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -325,7 +325,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cdmnjs1e7aw3kd"
+            "uid": "melvinprometheus"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -345,7 +345,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cdmnjs1e7aw3kd"
+        "uid": "melvinprometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -424,7 +424,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cdmnjs1e7aw3kd"
+            "uid": "melvinprometheus"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
@@ -444,7 +444,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cdmnjs1e7aw3kd"
+        "uid": "melvinprometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -523,7 +523,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cdmnjs1e7aw3kd"
+            "uid": "melvinprometheus"
           },
           "disableTextWrap": false,
           "editorMode": "builder",
